@@ -8,5 +8,5 @@ loginForm.addEventListener("submit", (e) => {
     console.log('Email:', email.value);
     console.log('Password:', password.value);
     // process and send to API 
-    window.location.href = "main.html";
+    window.location.href = "Main.html";
 });
