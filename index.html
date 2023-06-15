@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Example</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <span class="background"></span>
+        <span class="centering">
+            <form class="my-form">
+                <span class="login-welcome-row">
+                    <img
+                        class="login-welcome"
+                        src="./img/discordBG.png"
+                    />
+                    <!-- optimize the image in production -->
+                    <h2 style="color:aliceblue">건쭈의 즐겨찾는 사이트 모음!</h2>
+                </span>
+                <div class="text-field">
+                    <label for="email">Email:</label>
+                    <input
+                        aria-label="Email"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                    >
+                    <img
+                        alt="Email Icon"
+                        title="Email Icon"
+                        src="./img/email.svg"
+                    >
+                </div>
+                <div class="text-field">
+                    <label for="password">Password:</label>
+                    <input
+                        id="password"
+                        type="password"
+                        aria-label="Password"
+                        name="password"
+                        placeholder="Your Password"
+                        title="영문 1자 이상, 숫자 1자 이상의 최소 6자 이상의 문자를 입력해주세요!"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        required
+                    >
+                    <img
+                        alt="Password Icon"
+                        title="Password Icon"
+                        src="/img/password.svg"
+                    >
+                </div>
+                <input type="submit" class="my-form__button" value="Login" />
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Did you forget your password?</span>
+                        <a href="#" title="Reset Password">Reset Password</a>
+                    </div>
+                    <div class="my-form__signup">
+                        <a href="#" title="Create Account">Create Account</a>
+                    </div>
+                </div>
+            </form>
+        </span>
+        <script src="./JS/script.js"></script>
+    </body>
+</html>

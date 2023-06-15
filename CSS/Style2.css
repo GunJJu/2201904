@@ -1,0 +1,93 @@
+.background {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(../img/universe.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+  .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    /* align-items: center; 세로 중앙 정렬 */
+    height: 100vh; /* 부모 요소의 높이 설정 */
+  }
+
+
+  .table{
+    border-collapse: separate; /* 테이블 셀 경계를 별도로 지정 */
+    border-spacing: 30px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .table td{
+    background-color: rgba(116, 207, 207, 0.5); /* 투명한 배경 설정 */
+    text-align: center; /* 가운데 정렬 설정 */
+    padding: 7px;
+    border-radius: 5px;
+  }
+  
+  #topMenu{
+    height: 50px;
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #topMenu ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* 내부 요소들을 수평으로 표시 */
+  }
+
+  #topMenu li {
+    border-radius: 8px;
+    list-style: none;
+    color:rgb(255, 232, 218);
+    background-color: #1e2591;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  #topMenu .menuLink{
+    text-decoration: none;
+    color: rgb(255, 232, 218);
+    display: block;
+    width:300px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", 함초롱바탕;
+  }
+
+  #topMenu .menuLink:hover{
+    border-radius: 8px;
+    color: rgb(255, 232, 218);
+    background-color: #cd7d7c;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    margin-right: 15px;
+  }
